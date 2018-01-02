@@ -40,7 +40,6 @@ void loop()
 		LEDoff();
 	}
 	else {
-		Serial.println(cand);
 		analogWrite(R, 60);
 		digitalWrite(G, LOW);
 
