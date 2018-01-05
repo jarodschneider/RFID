@@ -1,5 +1,5 @@
 # RFID
-Test of MFRC522 RFID module on Arduino UNO r3
+Test of MFRC522 RFID module on Arduino UNO R3
 
 Simple authentication demo based on UID: authorized lights up LED green, unauthorized red
 
