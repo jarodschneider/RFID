@@ -8,6 +8,6 @@ Dependencies (see libraries directory):
 * [Keypad](https://github.com/Chris--A/Keypad)
 * [rfid](https://github.com/miguelbalboa/rfid)
 
-![Alt text](RFID_bb.png?raw=true)
+![Alt text](RFIDsec_bb.png?raw=true)
 
-![Alt text](RFID_schem.png?raw=true)
+![Alt text](RFIDsec_schem.png?raw=true)
