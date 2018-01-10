@@ -19,7 +19,7 @@ char keys[4][4] = {
 };
 byte rowPins[4] = { 14,2,3,4 };
 byte colPins[4] = { 5,6,7,8 };
-Keypad key = Keypad(makeKeymap(keys), rowPins, colPins, 4, 4);
+Keypad pad = Keypad(makeKeymap(keys), rowPins, colPins, 4, 4);
 
 void setup()
 {
@@ -101,7 +101,6 @@ void loop()
 			alarm = 0;
 		}
 
-		digitalWrite(R, LOW);
 		digitalWrite(G, HIGH);
 
 		delay(500);
@@ -119,16 +118,6 @@ void loop()
 			Serial.println("WRONG");
 			alarm++;
 		}
-		else {
-			// ALARM
-			//digitalWrite(R, HIGH);
-			//delay(1000);
-			//LEDoff();
-			//delay(1000);
-			//digitalWrite(R, HIGH);
-			//delay(1000);
-			//LEDoff();
-		}
 	}
 }
 
@@ -143,7 +132,7 @@ String getCode() {
 	Serial.println();
 	Serial.print("ENTER CODE TO DISARM:");
 	while (s.length() < 5) {
-		char customKey = key.getKey();
+		char customKey = pad.getKey();
 
 		if (customKey) {
 			s += customKey;
